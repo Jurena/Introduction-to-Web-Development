@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+html{
+	font-family: Gill Sans MT;
+}
+
+#header{
+	text-align: center;
+	border-bottom: 2px solid black;
+	width: 100%;
+	margin: none;
+	padding: none;
+	height: inherit;
+	
+	
+}
+
+#header a{
+	text-decoration: none;
+	color: black;
+}
+#header a:link, a:visited{
+	text-decoration: none;
+	color: black
+}
+
+#header:hover{
+	transition-duration: 0.5s;
+	text-shadow: 6px 0px 1px;
+}
+
+#subheader{
+	text-align: center;
+	border: 1px solid black;
+	width: 100%;
+	margin: none;
+	padding: none;
+	height: 50px;
+	align-content: center;
+	text-decoration: line-through
+}
+#easter{
+	text-align: center;
+	width: 100%;
+	margin: none;
+	padding: none;
+	height: 50px;
+	align-content: center;
+}
+
+#footer {
+	font-size: 80%; 
+	text-align: center;
+	font-family: Gill Sans MT;
+	padding-bottom: 0px;
+	margin-bottom:0px;
+	margin-left: 50%;
+	position:fixed;
+	bottom: 0px
+	
+}
+#footer a{
+	text-decoration: none
+}
+
+#footer a:link, a:visited{
+	text-decoration: none
+}
+.content{
+	height: 120%;
+	font-size: 120%;
+	text-align: justify;
+	display: inline-block;
+	position: relative;
+	margin-right: 15%;
+	align-content: center
+}
+
+.content a{
+	text-decoration: underline;
+	color:black
+}
+.content img{
+	float: left;
+	margin-left: 15%;
+}
+
+.content_bottoms{
+	margin-left: 15%;
+	margin-right:27%;
+	margin-top: 6%;
+
+
+}
+.content_other{
+	margin-left: 15%;
+	margin-right:27%;
+	margin-top: 0%
+
+}
+
+
+ul{
+	list-style-type: none;
+}
+
+li{
+    width: 33%;
+	float: left;
+	text-align: center;
+
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------
+ Button*/ 
+/* general Button*/ 
+.button{
+	padding: 2% 5%;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+	transition-duration: 0.3s;
+	align-items: center;
+	margin:auto;
+	position: relative
+	
+}
+
+/*Streetwear Button*/ 
+
+.button_street{
+	color: black;
+	border: 2px solid #e7e7e7;
+	float: left;
+
+}
+
+.button_street:hover{
+	background-color: beige;
+	
+}
+/* General Button*/
+
+.button_gen{
+	color: black;
+	border: 2px solid #e7e7e7;
+	float: right;
+
+	
+
+}
+.button_gen:hover{
+	background-color: #e7e7e7;
+	
+}
