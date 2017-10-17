@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+html{
+	font-family: Gill Sans MT;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+a:link, a:visited{
+	text-decoration: none;
+	color: black
+}
+#header{
+	text-align: center;
+	border-bottom: 2px solid black;
+	width: 100%;
+	margin: none;
+	padding: none;
+	height: inherit
+	
+}
+#header:hover{
+	transition-duration: 0.5s;
+	text-shadow: 6px 0px 1px;
+}
+
+#subheader{
+	text-align: center;
+	border: 1px solid black;
+	width: 100%;
+	margin: none;
+	padding: none;
+	height: 50px;
+	background-color: darkgray;
+	color: white;
+	align-content: center
+}
+#footer {
+	font-size: 80%; 
+	text-align: center;
+	font-family: Gill Sans MT;
+	padding-bottom: 0px;
+	margin-bottom:0px;
+	margin-left: 50%;
+	position:fixed;
+	bottom: 0px
+	
+}
+#footer a{
+	text-decoration: none
+}
+
+#footer a:link, a:visited{
+	text-decoration: none
+}
+
+#content{
+	height: 120%;
+	font-size: 120%;
+	text-align: justify;
+	margin: 12% 15%;
+	margin-bottom: 34%
+}
+
+#img {
+	align-items: center
+}
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------
+ Button*/ 
+/* general Button*/ 
+.button{
+	padding: 2% 5%;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+	transition-duration: 0.3s;
+	align-items: center;
+	margin:auto;
+	position: relative;
+	box-shadow: 1px 1px 10px 2px #e7e7e7 
+	
+}
+
+/*Streetwear Button*/ 
+
+.button_street{
+	color: black;
+	border: 2px solid #e7e7e7;
+	float: left;
+
+}
+
+.button_street:hover{
+	background-color: #e7e7e7;
+	
+}
+/* General Button*/
+
+.button_gen{
+	color: black;
+	border: 2px solid RGBa(231, 231, 231, 1.00) ;
+	float: right;
+
+	
+
+}
+.button_gen:hover{
+	background-color: #e7e7e7;
+	
+}
