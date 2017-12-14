@@ -1,41 +1,318 @@
 <!doctype html>
 <html>
-	<head> 
-		<meta charset="utf-8">
-		<link rel="stylesheet" type = "text/css" href="css/default.css">
-		<title>Tour of Joel's Dorm </title>			
-	</head>
-<body> 
-		<div id="header">  
-		<ul> <div id="ul"> 
-			<li> <a href="#"> About </a></li>
-			<li> <a href="index.html"> Home </a></li>
-			<li> <a href="#"> Contact </a></li>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Principled Basics</title>
+<!--Bootstraps Links--------------------------------------------------------------------------------------------------------------------------------->
 
-		</div></div></ul>
-	<div id="content">	
-	<br   />
-	<br   />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">  
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.0/css/responsive.bootstrap4.min.css"/>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+ 
+<!-------------------------------------------------------------DataTables Links--------------------------------------------------------------------------->
+<link rel="stylesheet" href="css/style.css"  type="text/css">
 
-			<p> 	Hello! This site is dedicated to giving you a tour of my amazing NYU Dorm!		</p>
-			<p> You'll be able to see everything from my bathroom, to the best place, my bedroom ;) </p>
+<iframe src="navbar.html" id="navframe" frameBorder="0" /> </iframe>
+	 
+</head>
 
-			</div>
-			
-			<center> <div id="dropdown">
-			  <button id="dropbutton">Begin Tour</button>
-			  <div id="dropdown-text">
-				<a href="livingroom.html">Living Room</a>
-				<a href="kitchen.html">Kitchen</a>
-				<a href="bathroom.html">Bathroom</a>
-				<a href="bedroom.html">Bedroom</a>
-			  </div>
-			</div></center>
+<script type="text/javascript">
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip({
+	  animated:'fade',    
+	  html: true,
+	  trigger: 'hover focus',
+	  placement: 'bottom',
+	  
+  });
+	});
+	
+</script>
+	
+<body class=" h-100">
+		<table class="table table-bordered text-center table_col table-sm table-sm-res">
+		  <caption class="sr-only sr-only-focusable">A spreadsheet of various basics for any given wardrobe, ranked by budget. </caption>
+			<thead class="text-center text-uppercase bg-white"> 
+				<tr>
+					<th>Budget</th>
+					<th>Bottoms</th>
+					<th>&nbsp;Tops&nbsp;</th>
+					<th>Footwear</th>
+					<!-- <th>Total</th> -->
+				</tr>
+				</thead>
+			  <tbody>
+			  
+				<tr> <!-- Des_1 --> 
+			  	  <td  data-toggle="tooltip" data-animation="true" onclick="window.open('#')"
+					  title="Total- $82.67"
+			  	   data-animation= "true">
+				  Destitute
+					 </td>
+				  
+				   <td data-toggle="tooltip" data-animation= "true" onclick="window.open('http://www.hm.com/us/product/47714?article=47714-M')"
+				   		title="HM Jeans- $30 <img src='img/Des/bottoms.jpg' width='125px' height='125px' alt='Picture of H&M black skinny jeans'> <p> IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem </p>">
+				   HM/ZARA Jeans
+				   </td>
+				   
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('http://www.tshirtwholesaler.com/Jerzees_363.htm')"
+				   		title="Jeezrs Shirts- $2.67 <img src='img/Des/tops.jpg' alt='Picture of a Brown Jeezrs T shirt' width= '50%' height='50%'> <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>">
+				  Jerzees Shirts
+				  </td>
+				  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://www.vans.com/shop/mens-shoes/canvas-authentic-black-black')"
+				   		title="Vans Authentic- $50 <img src='img/Des/shoe.png' alt='Picture of Black Vans Authentic low-top Sneakers' 
+				   		width='73%' height='73%'> Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum">
+				  Vans Authentics 
+				  </td>
+				<!--  <td>mdo</td> -->
+				</tr>
+				
+				<!--<tr>-- Des_2 
+					<td></td><td></td><td></td>
+					
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://google.com')"
+				   		title="">
+						Janoskis
+					</td>   -->
+				</tr>
+				
+				<tr>
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('#')"
+				   		title="">
+				  Poor
+				  </td> 
+				  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/z4Easn')"
+				   		title="">
+				  Cheap Monday
+				  </td>
+				  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/mWs1Ub')"
+				   		title="">
+				  Gildan Shirts 
+				  </td>
+				  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://google.com')"
+				   		title="">
+				  Chuck Taylor II
+				  </td>
+				<!--  <td>mdo</td> -->
+				</tr>
+				<tr>
+			  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://google.com')"
+				   		title="">
+				  Minimum
+				  </td>
+				   
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/BKsStL')"
+				   		title="">
+				  American Eagle Jeans
+				  </td>
+				  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/tmBK8z')"
+				   		title="">
+				  HM/ZARA Tees
+				  </td>
+				  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/gJBPty')"
+				   		title="">
+				  Old Skools
+				  </td>
+				<!--  <td>mdo</td> -->
+				</tr>
+				<tr>
+			  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://google.com')"
+				   		title="">
+				  Entry
+				  </td>
+				   
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://google.com')"
+				   		title="">
+				  Bullhead Jeans
+				  </td>
+				  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/Cds2H6')"
+				   		title="">
+				  Fruit of the Loom Shirt Pack
+				  </td>
+				  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/u1kAyC')"
+				   		title="">
+				  Stan Smiths
+				  </td>
+				<!--  <td>mdo</td> -->
+				</tr>
+				<tr>
+			  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('#')"
+				   		title="">
+				  Modest
+				  </td>
+				   
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/n6M5Li')"
+				   		title="">
+				  Uniqlo Jeans
+				  </td>
+				  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/W5Znkg')"
+				   		title="">
+				  American Apparel
+				  </td>
+				  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/9Kfmii')"
+				   		title="">
+				  Adidas Gats
+				  </td>
+				<!--  <td>mdo</td> -->
+				</tr>
+				<tr>
+				  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('#')"
+				   		title="">
+				  Fair
+				  </td> 
+				  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/ik54uv')"
+				   		title="">
+				  Gap Jeans
+				  </td>
+				  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/A7EhSL')"
+				   		title="">
+				  Gap Tees
+				  </td>
+				  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/Q4MQL6')"
+				   		title="">
+				  Gel Lyte 5s
+				  </td>
+				<!--  <td>mdo</td> -->
+				</tr>
+				<tr>
+			  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('#')"
+				   		title="">
+				  Good
+				  </td>
+				   
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/kgkH2M')"
+				   		title="">
+				  Levis Jeans
+				  </td>
+				  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/Y1VYy6')"
+				   		title="">
+				  Uniqlo Supima Tees
+				  </td>
+				  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/Pt1dRa')"
+				   		title="">
+				  CDG Chuck Taylors
+				  </td>
+				  
+				<!--  <td>mdo</td> -->
+				</tr>
+				<tr>
+			  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('#')"
+				   		title="">
+				  Excellent
+				  </td>
+				   
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/ykQa9e')"
+				   		title="">
+				  Naked and Famous
+				  </td>
+				  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/J95ixM')"
+				   		title="">
+				  Everlane Tees
+				  </td>
+				  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/2WyD9P')"
+				   		title="">
+				  Ultra Boost
+				  </td>
+				  
+				<!--  <td>mdo</td> -->
+				</tr>
+				<tr>
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://google.com')"
+				   		title="">
+				  Outstanding
+				  </td> 
+				  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/bchGto')"
+				   		title="">
+				  ACNE North Skinny 
+				  </td>
+				  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/XF7LwN')"
+				   		title="">
+				  John Elliot Tees
+				  </td>
+				  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/N9fqjS')"
+				   		title="">
+				  Raf Simons Stan Smiths
+				  </td>
+				<!--  <td>mdo</td> -->
+				</tr>
+				<tr>
+				  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://google.com')"
+				   		title="">	
+				  Enthusiast
+				  </td>
+				   
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/2dXg4m')"
+				   		title="">
+				  APC
+				  </td>
+				  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/irCW8b')"
+				   		title="">
+				  APC Tees
+				  </td>
+				  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/C3LCM1')"
+				   		title="">
+				  Common Projects 
+				  </td>
+				<!--  <td>mdo</td> -->
+				</tr>
+				<tr>
+			  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('#')"
+				   		title="">
+				  Monstrous
+				  </td> 
+				  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/CUzn8X')"
+				   		title="">
+				  Balmains
+				  </td>
+				  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/ztShki')"
+				   		title="">
+				  Rick Owens Tees
+				  </td>
+				  
+				  <td data-toggle="tooltip" data-animation= "true" onclick="window.open('https://goo.gl/ThXejq')"
+				   		title="">
+				  Margiela Gats 
+				  </td>
+				  
+				<!--  <td>mdo</td> -->
+				</tr>
 
-	</body>
-
-		
-		<footer> <div id="footer">
-			<p> Created by Joel Urena</p>
-		</footer> </div>
+			</table></div>
+</body>
+	 
 </html>

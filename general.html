@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Principled Basics</title>
+<!--Bootstraps Links--------------------------------------------------------------------------------------------------------------------------------->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.0/css/responsive.bootstrap4.min.css"/>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+ 
+<!-------------------------------------------------------------DataTables Links--------------------------------------------------------------------------->
+<link rel="stylesheet" href="css/style.css"  type="text/css">
+
+<iframe src="navbar.html" id="navframe" frameBorder="0"/> </iframe>
+	 
+</head>
+<script type="text/javascript">
+	var tops_src = ["img/Des/tops.jpg","img/Poor/tops.jpg","img/min/tops.jpg","img/entry/tops.jpg","img/modest/tops.jpg","img/fair/tops.jpg""img/good/tops.jpg","img/excellent/tops.jpg","img/outstanding/tops.jpg","img/enthusiast/tops.jpg","img/monstrous/tops.jpeg"];
+	
+	var bottoms_src = ["img/Des/bottoms.jpg","img/Poor/bottoms.jpg","img/min/bottoms.jpg","img/entry/bottoms.jpg","img/modest/bottoms.jpg","img/fair/bottoms.jpg","img/good/bottoms.jpg","img/excellent/bottoms.jpg","img/outstanding/bottoms.jpg","img/enthusiast/bottoms.jpg","img/monstrous/bottoms.jpg"];
+	
+	var shoes_src = ["img/Des/shoe.png","img/Poor/shoe.jpg","img/min/shoe.png","img/entry/shoe.jpg","img/modest/shoe.jpg","img/fair/shoe.png","img/good/shoe.jpg","img/excellent/shoe.jpg","img/outstanding/shoe.jpg","img/enthusiast/shoe.jpg","img/monstrous/shoe.jpg"];
+	
+	function RandomInt(min, max) {
+  		return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+	
+	var rand_int = getRandomInt(0,10);
+	
+	function generate(){
+			document.getElementById("bottoms").setAttribute("src",bottoms_src[rand_int]) 
+			document.getElementById("tops").setAttribute("src",tops_src[rand_int]) 
+			document.getElementById("footwear").setAttribute("src",shoes_src[rand_int]) 
+			console.log
+		}
+
+</script>
+
+<body>
+	<div class="container h-100"> 
+		<ul class="list-unstyled mx-xl-5 h-100">
+		  <li class="media">
+			<img id="bottoms" class="mr-3" src="img/enthusiast/bottoms.jpg" alt="Picture of Jeans" height="20%" width="20%">
+			<div class="media-body mx-xl-5">
+			  <h5 class="mt-0 mb-1">Bottoms</h5>
+			  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+			</div>
+		  </li>
+		  <li class="media">
+			<img id="tops" class="mr-3" src="img/enthusiast/tops.jpg" alt="Picture of T-Shirt" height="22%" width="22%">
+			<div class="media-body mx-xl-5">
+			  <h5 class="mt-0 mb-1">Top</h5>
+			  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+			</div>
+		  </li>
+		  <li class="media">
+			<img id="footwear" class="mr-3" src="img/monstrous/shoe.jpg" alt="Picture of sneakers" height="22%" width="22%">
+			<div class="media-body mx-xl-5">
+			  <h5 class="mt-xl-5 mb-1">Footwear</h5>
+			  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+			</div>
+		  </li>
+		</ul>
+		<div class="button button_gen" onClick="generate()" data-message="Click this button to generate a new outfit"> Generate </div>
+</div>
+</body>
+</html>
